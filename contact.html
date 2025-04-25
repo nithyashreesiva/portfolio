@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+    />
+    <link rel="icon" href="favicon_io/android-chrome-192x192.png" />
+    <style>
+      nav {
+        background: #590297;
+        text-align: center;
+        padding: 25px 20px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      nav a {
+        color: #ed9fbe;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: color 0.3s;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        background: #ed9fbe;
+        background: radial-gradient(
+          circle,
+          rgb(236, 170, 220) 0%,
+          rgba(247, 247, 247, 1) 100%
+        );
+        color: #4b0082;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        color: #615e5e;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      .form-container {
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+        padding: 40px;
+        max-width: 500px;
+        width: 100%;
+      }
+
+      label {
+        font-size: 20px;
+        font-size: 600;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 6px;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="email"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 1rem;
+      }
+
+      .gender-group {
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .gender-group input {
+        margin-right: 5px;
+      }
+
+      button {
+        margin-top: 30px;
+        width: 100%;
+        padding: 12px;
+        background-color: #8fc0f7;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-size: 20px;
+      }
+
+      button:hover {
+        background-color: #fcbddd;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>Get in touch!</h1>
+    <div class="form-container">
+      <form action="#" method="get">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="comments">Comments:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Write your comments here..."
+        ></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento"
+    />
+    <link rel="icon" href="favicon_io/android-chrome-192x192.png" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        background: #ed9fbe;
+        background: radial-gradient(
+          circle,
+          rgb(236, 170, 220) 0%,
+          rgba(247, 247, 247, 1) 100%
+        );
+        color: #4b0082;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .project {
+        margin: 40px auto;
+        width: 80%;
+        border: 1px solid #db506f;
+        padding: 20px;
+        border-radius: 10px;
+        background: #fff;
+      }
+      img {
+        width: 300px;
+        border-radius: 10px;
+      }
+      nav {
+        background: #590297;
+        text-align: center;
+        padding: 25px 20px;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      nav a {
+        color: #ed9fbe;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: color 0.3s;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>My Projects</h1>
+
+    <div class="project">
+      <h2>Portfolio Website</h2>
+      <p>A personal site built with HTML/CSS showcasing my profile.</p>
+      <img src="image/portfolio.png" alt="Portfolio Screenshot" />
+    </div>
+
+    <div class="project">
+      <h2>To-Do List App</h2>
+      <p>Simple JS-based app to track daily tasks.</p>
+      <img src="image/Screenshot 2025-04-25 181025.png" alt="ToDo App" />
+    </div>
+
+    <div class="project">
+      <h2>Weather Finder</h2>
+      <p>Fetches weather info using open API and displays in a clean UI.</p>
+      <img src="image/weather.png" alt="Weather App" />
+    </div>
+  </body>
+</html>
